@@ -19,7 +19,7 @@ if confused view this link.
 https://www.youtube.com/watch?v=0Bj-jTkhlTw&ab_channel=Iknowpython
 
 
-## Do not forget to add one file that contains the name of the group members who have doen the project
+## Do not forget to add one file that contains the name of the group members who have done the project
 
 
 
