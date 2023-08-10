@@ -105,7 +105,8 @@ void addrecords()
 	gets(st.address);
 	printf("Enter age:");
 	scanf("%d",&st.age);
-	fwrite(&st,sizeof(st),1,fptr); 
+	fseek(fptr,0,SEEK_END);/*sets the pointer at the end*/
+	fwrite(&st,sizeof(st),1,fptr); /*writes the new records at the end*/
 	printf("\nRecord has been added successfully.\n");
 }
 
