@@ -30,7 +30,7 @@ int main()
 	fptr=fopen("students.txt","r+");
 	if (fptr==NULL)
 	{
-		fptr=fopen("students.txt","a+");
+		fptr=fopen("students.txt","w+");
 		if (fptr==NULL)
 		{
 			printf("Unable to create the file");
@@ -105,8 +105,7 @@ void addrecords()
 	gets(st.address);
 	printf("Enter age:");
 	scanf("%d",&st.age);
-	fseek(fptr,0,SEEK_END);/*sets the pointer at the end*/
-	fwrite(&st,sizeof(st),1,fptr); /*writes the records at the end*/
+	fwrite(&st,sizeof(st),1,fptr); 
 	printf("\nRecord has been added successfully.\n");
 }
 
