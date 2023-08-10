@@ -30,7 +30,7 @@ int main()
 	fptr=fopen("students.txt","r+");
 	if (fptr==NULL)
 	{
-		fptr=fopen("students.txt","w+");
+		fptr=fopen("students.txt","a+");
 		if (fptr==NULL)
 		{
 			printf("Unable to create the file");
@@ -105,6 +105,7 @@ void addrecords()
 	gets(st.address);
 	printf("Enter age:");
 	scanf("%d",&st.age);
+	fseek(fptr,0,SEEK_END);
 	fwrite(&st,sizeof(st),1,fptr);
 	printf("\nRecord has been added successfully.\n");
 }
@@ -125,7 +126,7 @@ void modify()
 		{
 			data_found=1;
 			printf("\nThe old record is:\n");
-			printf("Name\t | Roll no.\t| Level\t| Programme\t | Gender\t | Section\t| Address\t |Age\n");
+			printf("Name\t  | Roll no. | Level | Programme | Gender | Section | Address\t |Age\n");
 			printf("-----------------------------------------------------------------\n");
 			printf("%s\t| %d\t | %s\t | %s\t | %c\t | %c\t | %s\t | %d",st.name,st.roll,st.level,st.programme,st.gender,st.section,st.address,st.age);
 			printf("\nEnter new name:");
@@ -175,7 +176,7 @@ void displayrecord()
 		if(strcmp(st.name,stud_name)==0)
 		{
 			datafound=1;
-			printf("Name\t | Roll no.\t| Level\t| Programme\t | Gender\t | Section\t| Address\t |Age\n");
+			printf("Name\t | Roll no. | Level | Programme | Gender | Section | Address\t |Age\n");
 			printf("\n-----------------------------------------------------------------\n");
 			printf("%s\t| %d\t | %s\t | %s\t | %c\t | %c \t | %s\t | %d",st.name,st.roll,st.level,st.programme,st.gender,st.section,st.address,st.age);
 		}
@@ -211,7 +212,7 @@ void deleterecord()
 void displayall()
 {
 	rewind(fptr);
-	printf("Name\t | Roll no.\t| Level\t| Programme\t | Gender\t| Section\t| Address\t | Age\n");
+	printf("Name\t | Roll no. | Level | Programme  | Gender | Section | Address\t | Age\n");
 	while(fread(&st,sizeof(st),1,fptr)==1)
 	{
 		printf("\n-------------------------------------------------------------------------------\n");
