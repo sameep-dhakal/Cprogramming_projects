@@ -11,7 +11,7 @@ make changes to your repositories and upload/push accordingly
 ### 1.use git clone repository link for eg:git@github.com:sameep-dhakal/Cprogramming_projects.git)
 ### 2.add your contents on that folder
 ### 3. git add . 
-### 4. git commit -m "program committed"
+### 4. git commit -m " (your name) committed "
 ### 5. git push
 
 folow these five steps to upload your project to repository.
