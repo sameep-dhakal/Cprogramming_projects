@@ -27,10 +27,10 @@ FILE *fptr,*fptrTemp;
 int main()
 {
 	int choice;
-	fptr=fopen("students.txt","r+");
+	fptr=fopen("students.txt","r+b");
 	if (fptr==NULL)
 	{
-		fptr=fopen("students.txt","w+");
+		fptr=fopen("students.txt","w+b");
 		if (fptr==NULL)
 		{
 			printf("Unable to create the file");
@@ -191,7 +191,7 @@ void deleterecord()
 	fflush(stdin);
 	printf("Enter the name of student whose record is to be deleted");
 	gets(st_name);
-	fptrTemp=fopen("temp.txt","w");  /*opens a temporary file to store all the records except the one to be deleted*/
+	fptrTemp=fopen("temp.txt","wb");  /*opens a temporary file to store all the records except the one to be deleted*/
 	rewind(fptr);
 	while(fread(&st,sizeof(st),1,fptr)==1)
 	{
@@ -205,7 +205,7 @@ void deleterecord()
 	fclose(fptrTemp);
 	remove("students.txt"); /*removes the original file*/
 	rename("temp.txt","students.txt");  /*renames the temporary file with the original filename*/
-	fptr=fopen("students.txt","r+");
+	fptr=fopen("students.txt","r+b");
 	printf("\nSuccessfully deleted.....\n");
 }
 
