@@ -1,0 +1,6 @@
+DESCRIPTION 
+add music name,genre,artist,album no.
+displays the information accordingly untill the user wants to enter.
+
+GROUP MEMBER
+SUDIP KOIRALA (ACE079BEI015)
