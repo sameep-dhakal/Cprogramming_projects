@@ -30,7 +30,7 @@ To get started with the Library Management System, you can clone this repository
 
 Compile the main program and library files using a C compiler (e.g., GCC):
 ```bash
-gcc -o library.exe lmsmain.c
+gcc -o library lmsmain.c
 ```
 
 ### Running the Program
