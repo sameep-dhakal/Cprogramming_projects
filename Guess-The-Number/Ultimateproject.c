@@ -4,7 +4,9 @@
 #include <string.h>
 
 
-// Function to play a single round of the game
+/* A fun and engaging basic GUESS THE NUMBER game. Hope you enjoy playing it. Have fun.*/
+
+
 void playGame(int lowerrange, int upperrange) {
     int secretNumber = rand() % (upperrange - lowerrange + 1) + lowerrange;
     int guess;
@@ -22,7 +24,7 @@ void playGame(int lowerrange, int upperrange) {
         } else if (guess > secretNumber) {
             printf("Too high! Try again.\n");
         } else {
-            printf("\033[1;34m"); 
+            printf("\033[1;34m"); //adds colour to the text
             printf("Congratulations! You guessed the number %d in %d attempts!\n", secretNumber, attempts);
             printf("\033[0m");
             printf("\033[1;36m");
@@ -32,6 +34,8 @@ void playGame(int lowerrange, int upperrange) {
         }
     } while (1);
 }
+
+/*main function*/
 
 int main() {
     srand(time(0));
@@ -133,3 +137,13 @@ int main() {
 
     return 0;
 }
+
+
+/** For text colors, following are the codes:
+* Red: \033[1;31m
+*Green: \033[1;32m
+*Yellow: \033[1;33m
+*Blue: \033[1;34m
+*Magenta: \033[1;35m
+*Cyan: \033[1;36m
+*White: \033[1;37m */
