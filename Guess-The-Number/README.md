@@ -1,5 +1,8 @@
 # Guess-The-Number-Game
 
+A fun and engaging GUESS THE NUMBER game.
+
+Hope you enjoy playing it. Have fun.
 
 # Contributor
 -Sugam Sen Sinjali
