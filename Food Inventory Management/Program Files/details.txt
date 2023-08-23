@@ -1,0 +1,54 @@
+Name: Anil
+Phone no: 9839272937
+Address: Kritipur, Kathmandu
+Landmark: Kritipur Hospital
+Total Sum: 300
+
+Name: Aayush
+Phone no: 9867273728
+Address: KTM
+Landmark: Naya Bus Park
+Total Sum: 300
+
+Name: Bikash
+Phone no: 9807637388
+Address: Bhaktapur
+Landmark: Darbar Square
+Total Sum: 250
+
+Name: Aakash
+Phone no: 9830272839
+Address: Pokhara
+Landmark: Lakeside
+Total Sum: 850
+
+Name: Ramesh
+Phone no: 9802378127
+Address: Kalanki
+Landmark: Driving Center
+Total Sum: 500
+
+Name: Bimal
+Phone no: 9802727383
+Address: Dhading
+Landmark: Charkune
+Total Sum: 1200
+
+Name: Ankit
+Phone no: 9804370987
+Address: Pokhara
+Landmark: Lakeside
+Total Sum: 310
+
+Name: Sudip
+Phone no: 9805678262
+Address: Morang
+Landmark: Biratchowk
+Total Sum: 500
+
+Name: Animesh
+Phone no: 9862340717
+Address: Jabdi
+Landmark: Chautara
+Total Sum: 1150
+
