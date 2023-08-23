@@ -1,3 +1,4 @@
+## GOOD KEEP IT UP
 # Basic_Banking_Management_System
 This Banking Management System is a simple command-line banking application built in C. It allows users to manage their accounts, perform transactions, and more. This project is developed as a part of learning C programming.
 
