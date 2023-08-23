@@ -1,5 +1,6 @@
 
-//C- project bct 1st year 1st sem
+//C- project bct 1st year 1st 
+//project calander to view future. present and past dates and write notes on important dates
 //NAME- BIRAJ SHRESTHA
 //ROLL N0-ACE079BCT024
 #include<stdio.h>
